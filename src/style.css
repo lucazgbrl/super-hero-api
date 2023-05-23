@@ -1,0 +1,122 @@
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+@import url('https://fonts.cdnfonts.com/css/wonder-boy-in-monster-world');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+};
+
+* {
+  font-family: 'Common Pixel', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('./pokemon-party.jpg');
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 5px;
+  font-family: 'Pokemon Solid', sans-serif;
+  color: #FFCC00;
+  text-shadow: -3px 3px 0 rgb(13, 101, 201),
+    3px 3px 0 rgb(13, 101, 201),
+    3px -3px 0 rgb(13, 101, 201),
+    -3px -3px 0 rgb(13, 101, 201);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  background-color: rgba(219, 102, 102, 0.4);
+  border: solid 1px black;
+  margin: 5px;
+}
+
+.button-20 {
+  appearance: button;
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Common Pixel', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 10;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-20:focus:not(:focus-visible),
+.button-20:focus {
+  outline: 0;
+}
+
+.button-20:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+.button-20:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.button-20:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+#poke-name {
+  font-size: 20px;
+  font-family: 'Wonder Boy In Monster World', sans-serif;
+  margin: 10px;
+  outline: none;
+}
+
+p {
+  background-color: rgba(35, 35, 36, 0.8);
+  box-shadow: 1px 2px 1px rgba(104, 101, 235, 0.5);
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+span, footer {
+  font-family: Rocher;
+  font-size: 18px;
+  margin: 5px;
+  text-align: center;
+}
